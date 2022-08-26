@@ -21,7 +21,7 @@ node {
 }
 
 // Configuration for Xtext projects
-configure(subprojects.findAll { it.name.startsWith('org.xtext') }) {
+configure(subprojects.findAll { it.name.startsWith('com.wlstjd') }) {
 	ext.xtextVersion = '2.27.0'
 	repositories {
 		maven {
@@ -39,7 +39,7 @@ configure(subprojects.findAll { it.name.startsWith('org.xtext') }) {
 	apply plugin: 'eclipse'
 	apply plugin: 'idea'
 	
-	group = 'org.xtext.example.mydsl'
+	group = 'com.wlstjd.lang.umjunsik'
 	version = '1.0.0-SNAPSHOT'
 	
 	sourceCompatibility = '1.8'
@@ -122,8 +122,7 @@ updateVersion {
 			def encoding = 'UTF-8'
 			def filesToUpdate = [
 				new File('vscode-extension', 'package.json'),
-				new File('vscode-extension-self-contained', 'package.json'),
-				new File('atom-extension', 'package.json')
+				new File('vscode-extension-self-contained', 'package.json')
 			]
 
 			// String replacements - isn't long enough to justify advanced code ;)

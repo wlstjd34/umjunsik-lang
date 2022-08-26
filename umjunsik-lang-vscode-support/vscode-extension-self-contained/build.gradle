@@ -1,5 +1,5 @@
 task copyApplication(type: Sync) {
-    def installDistTask = project(':org.xtext.example.mydsl.ide').tasks.installDist
+    def installDistTask = project(':com.wlstjd.lang.umjunsik.ide').tasks.installDist
     dependsOn installDistTask
     from installDistTask.outputs
     into 'src/mydsl'

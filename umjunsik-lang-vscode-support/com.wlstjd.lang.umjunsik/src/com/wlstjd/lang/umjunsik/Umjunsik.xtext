@@ -1,0 +1,9 @@
+grammar com.wlstjd.lang.umjunsik.Umjunsik with org.eclipse.xtext.common.Terminals
+
+generate umjunsik "http://www.wlstjd.com/example/umjunsik/Umjunsik"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID ('from' from=[Greeting])? '!';
