@@ -30,3 +30,7 @@ processResources.dependsOn(generateXtextLanguage)
 generateXtext.dependsOn(generateXtextLanguage)
 clean.dependsOn(cleanGenerateXtextLanguage)
 eclipse.classpath.plusConfigurations += [configurations.mwe2]
+
+jar {
+	duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+}

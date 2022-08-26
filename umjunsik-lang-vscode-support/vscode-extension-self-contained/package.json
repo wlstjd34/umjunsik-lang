@@ -20,37 +20,37 @@
         "Programming Languages"
     ],
     "activationEvents": [
-        "onLanguage:mydsl"
+        "onLanguage:umjunsik"
     ],
     "main": "out/extension",
     "contributes": {
         "languages": [
             {
-                "id": "mydsl",
+                "id": "umjunsik",
                 "aliases": [
-                    "mydsl"
+                    "umjunsik"
                 ],
                 "extensions": [
-                    ".mydsl"
+                    ".umm"
                 ],
-                "configuration": "./mydsl.configuration.json"
+                "configuration": "./umjunsik.configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "mydsl",
-                "scopeName": "text.mydsl",
-                "path": "./syntaxes/mydsl.tmLanguage.json"
+                "language": "umjunsik",
+                "scopeName": "text.umm",
+                "path": "./syntaxes/umjunsik.tmLanguage.json"
             }
         ],
         "commands": [
             {
-                "command": "mydsl.a.proxy",
-                "title": "MyDsl Command A"
+                "command": "umjunsik.a.proxy",
+                "title": "Umjunsik Command A"
             },
             {
-                "command": "mydsl.b",
-                "title": "MyDsl Command B"
+                "command": "umjunsik.b",
+                "title": "Umjunsik Command B"
             }
         ]
     },

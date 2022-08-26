@@ -3,7 +3,43 @@ grammar com.wlstjd.lang.umjunsik.Umjunsik with org.eclipse.xtext.common.Terminal
 generate umjunsik "http://www.wlstjd.com/example/umjunsik/Umjunsik"
 
 Model:
-	greetings+=Greeting*;
+	PROC_START program+=Statement+ PROC_END
+	;
 	
-Greeting:
-	'Hello' name=ID ('from' from=[Greeting])? '!';
+Statement:
+	SubstituteStmt
+	| UseStmt
+;
+
+SubstituteStmt :
+	UMM_VAR NUMERIC_EXPRESSION
+;
+
+terminal UMM_VAR_USE :
+	"어"+
+;
+
+UseStmt :
+	UMM_VAR_USE
+;
+
+terminal PROC_START :
+	"어떻게"
+;
+
+terminal PROC_END :
+	"이 사람이름이냐ㅋㅋ"
+;
+
+
+terminal UMM_VAR :
+	"어"? "엄"
+;
+
+terminal NUMERIC_EXPRESSION_TOKEN :
+	"." | ","
+;
+
+terminal NUMERIC_EXPRESSION :
+	NUMERIC_EXPRESSION_TOKEN+
+;
