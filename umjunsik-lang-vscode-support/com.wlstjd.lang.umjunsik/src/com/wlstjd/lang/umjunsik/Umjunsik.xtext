@@ -12,7 +12,7 @@ Statement:
 ;
 
 SubstituteStmt :
-	UMM_VAR NUMERIC_EXPRESSION
+	UMM_VAR NUMERIC_EXPRESSION?
 ;
 
 terminal UMM_VAR_USE :

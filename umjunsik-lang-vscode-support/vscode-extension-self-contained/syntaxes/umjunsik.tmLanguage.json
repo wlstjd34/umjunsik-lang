@@ -1,8 +1,8 @@
 {
-    "name": "MyDsl",
-    "scopeName": "text.mydsl",
+    "name": "Umjunsik",
+    "scopeName": "text.umm",
     "fileTypes": [
-        "mydsl"
+        "umm"
     ],
     "repository": {
         "general": {

@@ -1,8 +1,8 @@
 {
-	"name": "MyDsl",
-    "scopeName": "text.mydsl",
+    "name": "Umjunsik",
+    "scopeName": "text.umm",
     "fileTypes": [
-        "mydsl"
+        "umm"
     ],
     "repository": {
         "general": {
@@ -21,14 +21,14 @@
         "linecomment": {
             "name": "comment.line.double-dash.mydsl",
             "begin": "(^[ \\t]+)?(?=//)",
-			"end": "(?=$)"
+            "end": "(?=$)"
         },
         "blockcomment": {
             "name": "comment.block.mydsl",
             "begin": "/\\*(\\*)?(?!/)",
-			"end": "\\*/"
+            "end": "\\*/"
         },
-        
+
         "keyword": {
             "name": "keyword.control.mydsl",
             "match": "\\b(Hello|from)\\b|!"
